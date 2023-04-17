@@ -9,3 +9,6 @@ header{
 body{
   background-color: $bodyBackgroundColor;
 }
+main{
+  height: calc(100vh - $headerHeight);
+}

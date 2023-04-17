@@ -1,5 +1,7 @@
 <template>
-  Ciao
+  <main class="p-4">
+    Ciao
+  </main>
 </template>
 
 <script>
