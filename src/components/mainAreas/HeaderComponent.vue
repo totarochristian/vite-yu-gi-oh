@@ -5,11 +5,16 @@
       <h2>Yu-Gi-Oh Api</h2>
     </div>
   </header>
+  <JumbotronComponent />
 </template>
 
 <script>
+import JumbotronComponent from '../subAreas/header/JumbotronCOmponent.vue';
   export default {
-    name: "HeaderComponent"
+    name: "HeaderComponent",
+    components:{
+      JumbotronComponent
+    }
   }
 </script>
 
