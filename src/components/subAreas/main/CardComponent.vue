@@ -1,5 +1,5 @@
 <template>
-  <div class="card col-12 col-sm-6 col-md-4 col-lg-2 p-3">
+  <div class="cardElem col-12 col-sm-6 col-md-4 col-lg-2 p-3">
     <img :src="card.card_images[0].image_url" :alt="'Carta ' + card.name">
     <h5 class="text-center text-uppercase fw-bold pt-3">{{ card.name }}</h5>
     <h5 class="text-center">{{ card.archetype }}</h5>
@@ -16,5 +16,12 @@
 </script>
 
 <style lang="scss" scoped>
+  .cardElem{
 
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
 </style>
