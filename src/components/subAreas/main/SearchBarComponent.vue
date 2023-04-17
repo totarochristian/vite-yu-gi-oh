@@ -1,29 +1,15 @@
 <template>
-  <div id="searchBar">
-    <select class="form-select" aria-label="Default select example" v-model="store.selectedArchetype" @change="LoadCards()">
-      <option :value="archetype.archetype_name" v-for="archetype in store.archetypesList">{{ archetype.archetype_name }}</option>
-    </select>
+  <div id="searchBar" class="w-100 d-flex justify-content-center align-items-center">
+    <ArchetypeSelect />
   </div>
 </template>
 
 <script>
-  import { store } from '../../../data/store';
-  import axios from 'axios';
+  import ArchetypeSelect from './Select/ArchetypeSelect.vue';
   export default {
     name: "SearchBarComponent",
-    data(){
-      return {
-        store
-      }
-    },
-    methods:{
-      LoadCards(){
-        store.loadOperationsEnded = false;
-        axios.get(store.baseUrl+store.endpointCards+'?archetype='+store.selectedArchetype).then((res) => {
-          store.cardsList = res.data.data;
-          store.loadOperationsEnded = true;
-        });
-      }
+    components: {
+      ArchetypeSelect
     }
   }
 </script>
