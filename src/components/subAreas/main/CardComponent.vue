@@ -26,6 +26,7 @@
       border-radius: 20px;
       background-color: $cardBackgroundColor;
       color: $cardColor;
+      word-break: break-all;
     }
     img{
       width: 100%;
