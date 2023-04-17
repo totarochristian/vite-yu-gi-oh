@@ -12,6 +12,7 @@
 </script>
 
 <style lang="scss" scoped>
+  @import '../../../assets/styles/partial/variables';
   #title{
     height: 20vh;
     background-image: linear-gradient(
@@ -22,10 +23,10 @@
         rgb(0, 0, 0) 100%
     );
     h1{
-      color: #989b9d;
+      color: $titleH1Color;
     }
     h2{
-      color: white;
+      color: $titleH2Color;
     }
   }
 </style>
