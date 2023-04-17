@@ -1,5 +1,5 @@
 <template>
-  <span class="badge bg-black px-4 py-2"><h3>Numero di carte trovate: {{ store.cardsList.length }}</h3></span>
+  <span class="badge bg-black px-4 py-2 mb-3"><h3>Numero di carte trovate: {{ store.cardsList.length }}</h3></span>
 </template>
 
 <script>
