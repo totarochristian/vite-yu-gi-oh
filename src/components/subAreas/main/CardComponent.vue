@@ -33,6 +33,10 @@
       border-radius: 15px;
       position: relative;
       animation: UpAndDown 1.5s linear infinite;
+      &:hover {
+        cursor: pointer;
+        animation-play-state: paused;
+      }
     }
   }
   @keyframes UpAndDown {
