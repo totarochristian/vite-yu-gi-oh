@@ -1,7 +1,7 @@
 <template>
   <main class="p-4 d-flex flex-column justify-content-start align-items-center gap-3">
-    <SearchBarComponent />
-    <CardListComponent />
+    <SearchBarComponent v-show="loadOperationsEnded" />
+    <CardListComponent v-show="loadOperationsEnded" />
   </main>
 </template>
 
@@ -13,6 +13,9 @@ import CardListComponent from '../subAreas/main/CardsListComponent.vue'
     components: {
       SearchBarComponent,
       CardListComponent
+    },
+    props:{
+      loadOperationsEnded: Boolean
     }
   }
 </script>

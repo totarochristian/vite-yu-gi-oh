@@ -1,6 +1,6 @@
 <template>
   <HeaderComponent />
-  <MainComponent />
+  <MainComponent :loadOperationsEnded="store.loadOperationsEnded" />
 </template>
 
 <script>
