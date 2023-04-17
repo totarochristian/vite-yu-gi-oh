@@ -1,7 +1,10 @@
 <template>
-  <select class="form-select" aria-label="Default select example" v-model="store.selectedArchetype" @change="LoadCards()">
-    <option :value="archetype.archetype_name" v-for="archetype in store.archetypesList">{{ archetype.archetype_name }}</option>
-  </select>
+  <div class="d-flex flex-column">
+    <label for="archetypeSelect" class="fs-3 text-light">Archetipo:</label>
+    <select id="archetypeSelect" class="form-select" aria-label="Default select example" v-model="store.selectedArchetype" @change="LoadCards()">
+      <option :value="archetype.archetype_name" v-for="archetype in store.archetypesList">{{ archetype.archetype_name }}</option>
+    </select>
+  </div>
 </template>
 
 <script>
