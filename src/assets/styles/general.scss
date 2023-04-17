@@ -7,7 +7,7 @@ header{
   background-color: $headerBackgroundColor;
 }
 body{
-  background-color: $bodyBackgroundColor;
+  background-image: url("/images/hieroglyphs-bg.png");
 }
 main{
   height: calc(100vh - $headerHeight);
