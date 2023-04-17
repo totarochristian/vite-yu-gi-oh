@@ -18,11 +18,10 @@
     components: {
       HeaderComponent,
       MainComponent
-    }
-    ,
+    },
     methods: {
       StartLoadOperations(){
-        axios.get(store.baseUrl+store.endpointCards).then((res) => {
+        axios.get(store.baseUrl+store.endpointCards+'?archetype='+store.selectedArchetype).then((res) => {
           store.cardsList = res.data.data;
 
           axios.get(store.baseUrl+store.endpointArchetypes).then((res) =>{
