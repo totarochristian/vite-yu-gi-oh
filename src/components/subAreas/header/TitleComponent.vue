@@ -1,5 +1,5 @@
 <template>
-  <div id="title" class="w-100 d-flex flex-column justify-content-center align-items-center p-2">
+  <div id="title" class="w-100 d-flex flex-column justify-content-center align-items-center py-2 px-4">
     <h1>Sfoglia il catalogo</h1>
     <h2 class="text-center">Per diventare il miglior giocatore devi conoscere tutte le carte!</h2>
   </div>
