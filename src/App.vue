@@ -22,8 +22,13 @@
     ,
     methods: {
       StartLoadOperations(){
-        axios.get(store.baseUrl).then((res) => {
+        axios.get(store.baseUrl+store.endpointCards).then((res) => {
           store.cardsList = res.data.data;
+
+          axios.get(store.baseUrl+store.endpointArchetypes).then((res) =>{
+            store.archetypesList = res.data;
+          })
+
           store.loadOperationsEnded = true;
           console.log("Operazioni di caricamento concluse!");
         });
