@@ -1,8 +1,7 @@
 <template>
   <header>
-    <div class="w-100 h-100 px-3 py-1 d-flex align-items-center gap-3">
+    <div class="w-100 h-100 px-3 py-1 d-flex justify-content-center align-items-center gap-3">
       <img src="/images/logo.svg" alt="Logo Yu-Gi-Oh Api">
-      <h2>Yu-Gi-Oh Api</h2>
     </div>
   </header>
   <JumbotronComponent />
@@ -20,11 +19,12 @@ import JumbotronComponent from '../subAreas/header/JumbotronCOmponent.vue';
 
 <style lang="scss" scoped>
   header{
-    img{
+    img:last-child{
       height: 100%;
       width: auto;
       object-position: center;
       object-fit: contain;
+      margin-top: 2rem;
     }
   }
 </style>
