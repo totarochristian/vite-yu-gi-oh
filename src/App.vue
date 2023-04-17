@@ -24,7 +24,7 @@
       StartLoadOperations(){
         axios.get(store.baseUrl).then((res) => {
           store.cardsList = res.data.data;
-          store.loadOperactionEnded = true;
+          store.loadOperationsEnded = true;
         });
       }
     },
