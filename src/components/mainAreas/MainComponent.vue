@@ -1,12 +1,16 @@
 <template>
   <main class="p-4">
-    Ciao
+    <SearchBarComponent />
   </main>
 </template>
 
 <script>
+import SearchBarComponent from '../subAreas/main/SearchBarComponent.vue';
   export default {
-    name: "MainComponent"
+    name: "MainComponent",
+    components: {
+      SearchBarComponent
+    }
   }
 </script>
 
