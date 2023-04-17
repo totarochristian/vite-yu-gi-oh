@@ -14,8 +14,9 @@
 </script>
 
 <style lang="scss" scoped>
+  @use "../../assets/styles/partial/variables" as *;
+
   header{
-    height: 70px;
     img{
       height: 100%;
       width: auto;

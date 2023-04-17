@@ -1,3 +1,11 @@
-@import "./partial/variables";
+@use "./partial/variables" as *;
 
 @import 'bootstrap/scss/bootstrap';
+
+header{
+  height: $headerHeight;
+  background-color: $headerBackgroundColor;
+}
+body{
+  background-color: $bodyBackgroundColor;
+}
