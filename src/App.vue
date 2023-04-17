@@ -1,6 +1,6 @@
 <template>
   <HeaderComponent />
-  <MainComponent :loadOperationsEnded="store.loadOperationsEnded" />
+  <MainComponent />
 </template>
 
 <script>
@@ -25,6 +25,7 @@
         axios.get(store.baseUrl).then((res) => {
           store.cardsList = res.data.data;
           store.loadOperationsEnded = true;
+          console.log("Operazioni di caricamento concluse!");
         });
       }
     },
