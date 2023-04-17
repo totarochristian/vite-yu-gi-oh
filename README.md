@@ -53,8 +53,8 @@ Users should be able to:
 ### Useful resources
 
 - [Boostrap documentation](https://getbootstrap.com/) - This helped me to learn how to use the Bootstrap framework during the construction of this site.
-- [Vue documentation](https://vuejs.org/guide/introduction.html) - This helpe me to learn how to use Vue during the construction of this site.
-- [Yu-Gi-Oh Api documentation](https://ygoprodeck.com/api-guide/)
+- [Vue documentation](https://vuejs.org/guide/introduction.html) - This helped me to learn how to use Vue during the construction of this site.
+- [Yu-Gi-Oh Api documentation](https://ygoprodeck.com/api-guide/) - This allowed me to use some APIs to get the card data to display.
 
 ## Author
 
