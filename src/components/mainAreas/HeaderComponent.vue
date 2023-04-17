@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="w-100 h-100 px-3 py-1 d-flex align-items-center gap-3">
-      <img src="/images/logo.png" alt="Logo Yu-Gi-Oh Api">
+      <img src="/images/logo.svg" alt="Logo Yu-Gi-Oh Api">
       <h2>Yu-Gi-Oh Api</h2>
     </div>
   </header>
